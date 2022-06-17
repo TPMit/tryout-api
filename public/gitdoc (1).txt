@@ -1,0 +1,42 @@
+git server local desktopip
+ip= 192.168.105.28
+$username= aven,tedi,jajang,tresna,abi,firman,gulam
+password=p@55w0rd
+
+daftar directory beserta akses user 
+dip-cloud.git= abi tresna
+license-management.git= firman 
+portal-apps.git= abi tresna
+prakerja-api.git= abi tresna
+prakerja-portofolio.git= abi tresna
+prakerja-project.git= abi tresna
+prakerja-talent.git= abi tresna
+thinbase-linux.git= aven 
+thinbase-windows.git= aven 
+toostudio.git= abi tresna
+tootanium-admin.git= abi tresna
+tootanium-api.git= abi tresna
+tootanium-chat.git= firman
+tootanium-helper.git=  abi tresna
+tootanium-mobile.git= aven tedi jajang
+tootanium-store.git= abi tresna
+virtualiztic.git= firman gulam
+toostudio-mobile.git= aven tedi jajang
+exploriztic.git= abi 
+
+
+=== how to commit and push ==
+1. cd ke directory projectnya
+2. inisialisasikan
+# git init
+3. tambahkan file di direktori tsb
+# git add .
+4. membuat branch/ memberikan log
+# git commit -m "fixed bug" -a
+5. add remote origin
+git remote add origin ssh://$username@192.168.105.28:/mnt/builder/git-server/$directory
+contoh:
+git remote add origin ssh://firman@192.168.105.28:/mnt/builder/git-server/license-management.git
+6 git push origin master
+
+
